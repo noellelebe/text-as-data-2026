@@ -1,32 +1,12 @@
-# SE Advanced Text Analysis — Text as Data (2026)
+# SE Advanced Text Analysis (2026)
 
-This repository contains the slides, notebooks, and small datasets used in **SE Advanced Text Analysis**. We use them to examine how choices about preprocessing, text representation, and modeling change what we can measure and conclude from text.
+This repository contains the course materials for **SE Advanced Text Analysis**: lecture slides, practical notebooks, and datasets. Across the course, we work with text representation and preprocessing, dictionaries and annotation, supervised and unsupervised methods, embeddings and transformer models, and the evaluation and validation of text-based measures.
 
-## Course guide
+## Install the Python packages
 
-The practical work follows a recurring sequence:
+Use **Python 3.10 or newer**. Open a terminal in the repository's top-level folder, the one containing this README and `materials/`.
 
-1. **Define the question and concept.** Decide what a text-based measure should capture.
-2. **Represent the text.** Tokenize documents and build features such as word counts, n-grams, and TF-IDF.
-3. **Compare choices.** Hold the corpus fixed while changing one preprocessing or representation setting.
-4. **Inspect the result.** Look at terms, document similarities, and examples from the original texts.
-5. **Explain the trade-off.** Connect numerical differences back to the research question and possible measurement errors.
-
-The repository currently contains the **Day 1 materials**. The slides introduce text as data; the guided notebook works through representation choices; and the exercise asks you to change a small part of the code and interpret the difference. Later course materials can be added to the same structure.
-
-| Start here | Purpose |
-| --- | --- |
-| [`day1/main.pdf`](day1/main.pdf) | Day 1 lecture slides |
-| [`materials/notebooks/day_1_representation.ipynb`](materials/notebooks/day_1_representation.ipynb) | Guided example: tokenization, document-term matrices, weighting, and similarity |
-| [`materials/notebooks/day_1_representation_exercise.ipynb`](materials/notebooks/day_1_representation_exercise.ipynb) | Student exercise: change a representation and discuss the result |
-| [`materials/data/`](materials/data/) | CSV datasets used by the notebooks; see the [data guide](materials/data/README.md) for sources |
-| [`day1/main.tex`](day1/main.tex) | Editable Beamer source for the slides; LaTeX is optional for students |
-
-## First-time setup
-
-Use **Python 3.10 or newer**. Open a terminal in the repository's top-level folder, the one containing this README and the `materials` folder. You need an internet connection to install Python packages and the optional spaCy model.
-
-### 1. Create and activate a virtual environment
+Create and activate a virtual environment:
 
 **macOS / Linux**
 
@@ -42,61 +22,48 @@ py -3 -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-Check that the active Python is version 3.10 or newer:
-
-```bash
-python --version
-```
-
-### 2. Install the course packages
-
-From the repository's top-level folder:
+Install the core packages:
 
 ```bash
 python -m pip install --upgrade pip
 python -m pip install -r materials/requirements.txt
 ```
 
-For the guided notebook's full spaCy examples, also install the small English language model:
+For the full spaCy examples, install the small English language model:
 
 ```bash
 python -m spacy download en_core_web_sm
 ```
 
-The notebooks can still tokenize text if this model is unavailable, but part-of-speech tags, lemmas, and other trained annotations require it.
+The notebooks can still tokenize English text without this model, but trained annotations such as part-of-speech tags and lemmas require it.
 
-### 3. Optional: install transformer packages
+### Transformer packages
 
-Install these **in the same active environment** when the course moves to transformer-based work:
+When you need the transformer exercises, install their additional packages in the **same active environment**:
 
 ```bash
 python -m pip install -r materials/requirements-transformers.txt
 ```
 
-This file also includes the base requirements. It adds PyTorch, Hugging Face Transformers, Accelerate, and Datasets. The install and later model downloads are larger than the Day 1 setup; you do not need them for the notebooks currently in this repository.
+This requirements file also includes the core packages. It adds PyTorch, Hugging Face Transformers, Accelerate, and Datasets. The install and model downloads may take longer than the core setup.
 
-### 4. Start JupyterLab
+## Use the materials
+
+Start JupyterLab from the repository's top-level folder:
 
 ```bash
 python -m jupyter lab
 ```
 
-In the browser, open `materials/notebooks/day_1_representation.ipynb`. Choose the kernel from your `.venv` if Jupyter asks. Run cells **from top to bottom**. Then open `day_1_representation_exercise.ipynb`, run its prepared setup cells, and edit the cells marked **STUDENT EDIT**. Use *Kernel → Restart Kernel and Run All Cells* to check that your work runs from a clean start.
+Open the notebook for your session in `materials/notebooks/` and run its cells from top to bottom. If Jupyter asks for a kernel, choose the Python environment in `.venv`. The notebooks use the bundled files in `materials/data/`, so you do not need to download datasets during class. Dataset sources are listed in the [data guide](materials/data/README.md).
 
-The CSV files are already included in `materials/data/`; no dataset download is needed for class. The script in `materials/scripts/` is only for rebuilding selected open datasets.
+Lecture slides are in the course's lecture folders. Exercise notebooks identify the cells you should edit; keep a copy of your work under a new filename if you want to preserve the supplied version. Run *Kernel → Restart Kernel and Run All Cells* before submitting or sharing a notebook to check that it works from a clean start.
 
-## How to work with the repository
+## If something does not run
 
-- Keep the original data files in `materials/data/`. Save your own analyses or modified notebooks under a new name so you can compare them with the supplied version.
-- When you change a representation, compare it with the baseline on the **same documents**. Record which setting changed and what happened to the vocabulary, most frequent terms, and document similarities.
-- Read example texts before interpreting a pattern as a substantive finding. A feature can be statistically prominent yet measure something other than the concept you intended.
-- If new course materials are added later, update your local copy before class (`git pull` for a clone, or download a new ZIP).
+- **Missing Python package:** make sure `.venv` is active, rerun the relevant `pip install -r` command, and restart the notebook kernel.
+- **Wrong Jupyter kernel:** run `import sys; print(sys.executable)` in a notebook. The path should point to `.venv`.
+- **spaCy model missing:** run `python -m spacy download en_core_web_sm` in the active environment.
+- **Data file missing:** start JupyterLab from the repository's top-level folder and run the notebook's setup cells first.
 
-## Troubleshooting
-
-- **`No module named ...` or the wrong Jupyter kernel:** activate `.venv`, reinstall with the commands above if needed, and restart JupyterLab. In a notebook, `import sys; print(sys.executable)` should point to the `.venv` Python.
-- **spaCy cannot find `en_core_web_sm`:** run `python -m spacy download en_core_web_sm` in the active environment. The notebooks fall back to a blank English tokenizer if the model is missing.
-- **A data file is not found:** start JupyterLab from the repository's top-level folder and run the notebook's setup cells before later cells.
-- **Windows does not activate the environment:** use Command Prompt with `.venv\Scripts\activate.bat`, or follow your institution's guidance for PowerShell execution policy.
-
-The optional conda environment files are in `materials/` for students who use conda rather than pip.
+Conda users can use the environment files in `materials/` instead of the pip setup above.
