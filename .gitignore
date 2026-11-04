@@ -1,0 +1,29 @@
+# Local Python and Jupyter files
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local downloads and operating-system files
+materials/raw_downloads/
+.DS_Store
+
+# Instructor-only material
+materials/notebooks/*_solution.ipynb
+
+# LaTeX build files (keep main.tex and main.pdf)
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# Older local previews, not part of the student materials
+day1/preview.pdf
+day1/facsimile.tex
