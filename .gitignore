@@ -12,18 +12,32 @@ materials/raw_downloads/
 # Instructor-only material
 materials/notebooks/*_solution.ipynb
 
-# LaTeX build files (keep main.tex and main.pdf)
+# LaTeX sources and generated files (keep finished lecture PDFs)
+*.tex
 *.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
 *.fdb_latexmk
 *.fls
+*.glg
+*.glo
+*.gls
+*.ist
+*.lof
 *.log
+*.lot
 *.nav
 *.out
+*.ps
+*.run.xml
 *.snm
+*.synctex
 *.synctex.gz
 *.toc
 *.vrb
+*.xdv
 
 # Older local previews, not part of the student materials
-day1/preview.pdf
-day1/facsimile.tex
+preview.pdf
