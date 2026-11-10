@@ -1,43 +1,10 @@
-# Local Python and Jupyter files
-.venv/
-__pycache__/
-*.py[cod]
-.ipynb_checkpoints/
-.pytest_cache/
+# Keep the README, compiled lecture decks, and the complete materials folder.
+*
+!*/
+!lectures/**/main.pdf
+!materials/**
+!/README.md
+!/.gitignore
 
-# Local downloads and operating-system files
-materials/raw_downloads/
-.DS_Store
-
-# Instructor-only material
-materials/notebooks/*_solution.ipynb
-
-# LaTeX sources and generated files (keep finished lecture PDFs)
-*.tex
-*.aux
-*.bbl
-*.bcf
-*.blg
-*.dvi
-*.fdb_latexmk
-*.fls
-*.glg
-*.glo
-*.gls
-*.ist
-*.lof
-*.log
-*.lot
-*.nav
-*.out
-*.ps
-*.run.xml
-*.snm
-*.synctex
-*.synctex.gz
-*.toc
-*.vrb
-*.xdv
-
-# Older local previews, not part of the student materials
-preview.pdf
+# macOS metadata is not teaching material.
+**/.DS_Store

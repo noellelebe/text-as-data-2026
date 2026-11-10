@@ -2,6 +2,13 @@
 
 This repository contains the course materials for **SE Advanced Text Analysis**: lecture slides, practical notebooks, and datasets. Across the course, we work with text representation and preprocessing, dictionaries and annotation, supervised and unsupervised methods, embeddings and transformer models, and the evaluation and validation of text-based measures.
 
+## Lecture slides
+
+- **[Day 1](lectures/day1/main.pdf):** Text representation, preprocessing, feature engineering, TF–IDF, and text similarity.
+- **[Day 2](lectures/day2/main.pdf):** Dictionaries, human annotation, supervised classification, model examples, and validation.
+- **Days 3–4 (combined methods deck):** Neural networks, word and contextual embeddings, transformers, fine-tuning, LLM annotation, and multilingual analysis. A compiled PDF is not currently available here.
+- **[Day 4 wrap-up](lectures/day4/main.pdf):** Method choice, case studies, course assessment, feedback, and project talks.
+
 ## Install the Python packages
 
 Use **Python 3.10 or newer**. Open a terminal in the repository's top-level folder, the one containing this README and `materials/`.
