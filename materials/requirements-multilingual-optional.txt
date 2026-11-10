@@ -1,0 +1,4 @@
+-r requirements-transformers.txt
+sentence-transformers
+sentencepiece
+pyreadr

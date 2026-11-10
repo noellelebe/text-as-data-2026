@@ -1,0 +1,37 @@
+id,lang,text,translation_en,gold
+en01,en,The government proposes a carbon tax,The government proposes a carbon tax,policy
+en02,en,Parliament approves new emissions rules,Parliament approves new emissions rules,policy
+en03,en,Ministers debate subsidies for clean energy,Ministers debate subsidies for clean energy,policy
+en04,en,The cabinet rejects a ban on diesel cars,The cabinet rejects a ban on diesel cars,policy
+en05,en,Climate activists march through the capital,Climate activists march through the capital,protest
+en06,en,Students demand action at a rally,Students demand action at a rally,protest
+en07,en,Protesters block traffic near parliament,Protesters block traffic near parliament,protest
+en08,en,Police arrest demonstrators at a climate protest,Police arrest demonstrators at a climate protest,protest
+en09,en,Floods force families from their homes,Floods force families from their homes,impact
+en10,en,A drought destroys crops despite a new tax,A drought destroys crops despite a new tax,impact
+en11,en,Heatwaves strain city hospitals,Heatwaves strain city hospitals,impact
+en12,en,Wildfires spread after months of dry weather,Wildfires spread after months of dry weather,impact
+de01,de,Die Regierung plant eine CO2-Steuer,The government plans a carbon tax,policy
+de02,de,Das Parlament beschließt neue Emissionsregeln,Lawmakers adopt new emissions standards,policy
+de03,de,Minister diskutieren Zuschüsse für saubere Energie,Ministers discuss support for clean energy,policy
+de04,de,Das Kabinett lehnt ein Verbot für Dieselautos ab,The cabinet opposes a ban on diesel cars,policy
+de05,de,Klimaaktivisten demonstrieren in der Hauptstadt,Climate activists demonstrate in the capital,protest
+de06,de,Studierende fordern Maßnahmen bei einer Kundgebung,Students call for action at a public gathering,protest
+de07,de,Protestierende blockieren den Verkehr vor dem Parlament,Protesters block traffic outside parliament,protest
+de08,de,Die Polizei nimmt Demonstranten bei einem Klimaprotest fest,Police arrest demonstrators at a climate protest,protest
+de09,de,Überschwemmungen vertreiben Familien aus ihren Häusern,Flooding forces families from their homes,impact
+de10,de,Eine Dürre zerstört Ernten im Süden,Drought ruins harvests in the south,impact
+de11,de,Hitzewellen belasten Krankenhäuser in der Stadt,Extreme heat strains city hospitals,impact
+de12,de,Waldbrände breiten sich nach Monaten der Trockenheit aus,Wildfires spread after months of dry weather,impact
+es01,es,El gobierno propone un impuesto al carbono,The government proposes a carbon tax,policy
+es02,es,El parlamento aprueba nuevas normas de emisiones,Parliament adopts new emissions standards,policy
+es03,es,Los ministros debaten subsidios para energía limpia,Ministers discuss support for clean energy,policy
+es04,es,El gabinete rechaza una prohibición de coches diésel,The cabinet rejects a ban on diesel cars,policy
+es05,es,Activistas climáticos marchan por la capital,Climate activists march through the capital,protest
+es06,es,Estudiantes exigen medidas en una manifestación,Students demand action at a public gathering,protest
+es07,es,Manifestantes bloquean el tráfico cerca del parlamento,Demonstrators block traffic near parliament,protest
+es08,es,La policía detiene a participantes en una protesta climática,Police arrest people at a climate protest,protest
+es09,es,Las inundaciones obligan a familias a dejar sus hogares,Floods force families to leave their homes,impact
+es10,es,Una sequía destruye cultivos mientras se debaten impuestos,Drought destroys crops as lawmakers debate taxes,impact
+es11,es,Las olas de calor saturan hospitales urbanos,Extreme temperatures overwhelm urban hospitals,impact
+es12,es,Los incendios forestales se extienden tras meses de sequía,Forest fires spread after months of drought,impact

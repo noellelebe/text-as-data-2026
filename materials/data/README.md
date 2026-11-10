@@ -11,6 +11,7 @@ data during class.
 | `federalist.csv` | Authorship attribution and stylometry | Legacy course material |
 | `headlines.csv` | Dictionary measurement and source comparison | Legacy course material |
 | `reviews.csv` | Sentiment classification fallback | Legacy course material |
+| `multilingual_climate_examples.csv` | Day 4 multilingual dictionaries, translation and validation | Constructed teaching headlines and English paraphrases; not published news or machine-translation output |
 | `sotu.csv` | Political speech representation and temporal analysis | Legacy course material |
 
 The downloaded files are classroom-sized subsets where needed. The raw download
